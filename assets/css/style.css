@@ -1,0 +1,200 @@
+@font-face {
+   font-family: 'Tomioka';
+   src: url('/assets/fonts/Tomioka_font.ttf') format('truetype');
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Tomioka';
+}
+
+.fundo {
+   width: 100%;
+   height: 100vh;
+   background-image: url(/assets/img/Tomioka.png);
+   background-size: cover;
+   background-position: center;
+   position: cover;
+   overflow: hidden;
+}
+
+.logo {
+   width: 200px;
+   cursor: pointer;
+}
+
+.navbar {
+   width: 85%;
+   height: 15%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+button {
+   color: #fff;
+   padding: 10px 25px;
+   background: transparent;
+   border: 3px solid #fff;
+   border-radius: 20px;
+   outline: none;
+   cursor: pointer;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.content {
+   color: #fbfcfd;
+   position: absolute;
+   top: 50%;
+   left: 8%;
+   transform: translateY(-50%);
+   z-index: 2;
+   font-size: 40px;
+}
+
+h1 {
+   font-size: 80px;
+   margin: 10px 0 30px;
+   line-height: 80px;
+}
+
+.side-bar {
+   width: 50px;
+   height: 100vh;
+   filter: opacity(70%);
+   background: linear-gradient(#00545d, #000729);
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.menu {
+   display: block;
+   width: 50px;
+   margin: 40px auto 0;
+   cursor: pointer;
+}
+
+.gotas img{
+   width: 50px;
+   animation: gota 7s linear infinite;
+}
+
+.gotas {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   top: -70px;
+}
+
+@keyframes gota {
+   0% {
+      transform: translateY(0);
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   70% {
+      opacity: 1;
+   }
+   100% {
+      transform: translateY(100vh);
+      opacity: 0;
+   }
+}
+
+.gotas img:nth-child(1) {
+   animation-delay: 1s;
+   width: 40px;
+}
+.gotas img:nth-child(2) {
+   animation-delay: 2s;
+   width: 35px;
+}
+.gotas img:nth-child(3) {
+   animation-delay: 5s;
+   width: 55px;
+}
+.gotas img:nth-child(4) {
+   animation-delay: 3s;
+   width: 60px;
+}
+.gotas img:nth-child(5) {
+   animation-delay: 7s;
+   width: 50px;
+}
+.gotas img:nth-child(6) {
+   animation-delay: 4s;
+   width: 45px;
+}
+.gotas img:nth-child(7) {
+   animation-delay: 6s;
+   width: 65px;
+}
+
+/* Aqui começa as bolhas */
+
+.bubles img{
+   width: 50px;
+   animation: bolhas 7s linear infinite;
+}
+
+.bubles {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   bottom: -70px;
+}
+
+@keyframes bolhas {
+   0% {
+      transform: translateY(0);
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   70% {
+      opacity: 1;
+   }
+   100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+   }
+}
+
+.bubles img:nth-child(1) {
+   animation-delay: 1s;
+   width: 40px;
+}
+.bubles img:nth-child(2) {
+   animation-delay: 2s;
+   width: 35px;
+}
+.bubles img:nth-child(3) {
+   animation-delay: 5s;
+   width: 55px;
+}
+.bubles img:nth-child(4) {
+   animation-delay: 3s;
+   width: 60px;
+}
+.bubles img:nth-child(5) {
+   animation-delay: 7s;
+   width: 50px;
+}
+.bubles img:nth-child(6) {
+   animation-delay: 4s;
+   width: 45px;
+}
+.bubles img:nth-child(7) {
+   animation-delay: 6s;
+   width: 65px;
+}
